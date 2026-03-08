@@ -1,0 +1,167 @@
+
+
+/* Redesigned Weather.css for modern, clean, and responsive look */
+
+.Weather {
+    place-self: center;
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(135deg, #3a4ca8 60%, #7b2ff2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    min-width: 320px;
+    max-width: 95vw;
+    margin: 40px auto;
+    transition: box-shadow 0.2s;
+}
+
+.Weather:hover {
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.28);
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 350px;
+}
+
+
+.search-bar input {
+    height: 48px;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    padding-left: 1.25rem;
+    color: #444;
+    background: #f5f7fa;
+    font-size: 1.1rem;
+    flex: 1;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.search-bar input:focus {
+    background: #e0e7ff;
+    box-shadow: 0 4px 16px rgba(123,47,242,0.08);
+}
+
+
+.search-bar img {
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #f5f7fa;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.search-bar img:hover {
+    background: #e0e7ff;
+    box-shadow: 0 4px 16px rgba(123,47,242,0.10);
+}
+
+
+.Weather-icon {
+    width: 110px;
+    margin: 24px 0 8px 0;
+    filter: drop-shadow(0 4px 16px rgba(0,0,0,0.10));
+}
+
+
+.temperature {
+    color: #fff;
+    font-size: 3.2rem;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 8px rgba(123,47,242,0.10);
+}
+
+
+.location {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(58,76,168,0.10);
+}
+
+
+.Weather-data {
+    width: 100%;
+    margin-top: 2rem;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.Weather-data .col {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.2rem;
+    background: rgba(255,255,255,0.10);
+    border-radius: 1rem;
+    padding: 0.75rem 1.2rem;
+    min-width: 0;
+    max-width: 48%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    flex: 1 1 0;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    word-break: break-word;
+    overflow: hidden;
+}
+
+
+.Weather-data .col span {
+    display: block;
+    font-size: 0.95rem;
+    color: #e0e7ff;
+    margin-top: 2px;
+}
+
+
+.Weather-data .col img {
+    width: 26px;
+    margin-top: 6px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .Weather {
+        padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+        min-width: 90vw;
+        border-radius: 0.5rem;
+    }
+    .Weather-data {
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: center;
+        max-width: 98vw;
+        width: 100%;
+    }
+    .Weather-data .col {
+        max-width: 100%;
+        width: 100%;
+    }
+    .search-bar {
+        max-width: 98vw;
+    }
+}
