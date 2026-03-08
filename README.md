@@ -1,22 +1,46 @@
+# 🌦️ Weather App
 
-# Weather App 🌦️
+A modern and responsive **Weather Application** built using **React + Vite** that allows users to search and view real-time weather information for any city using the **OpenWeatherMap API**.
 
-This is a simple and modern weather app built with **React** and **Vite**. It allows you to search for the current weather in any city using the OpenWeatherMap API.
+The application displays important weather details such as temperature, humidity, and wind speed with a clean and user-friendly interface.
 
-## Features
+---
 
-- Search for weather by city name
-- Displays temperature, humidity, and wind speed
-- Responsive and clean UI
-- Error handling for invalid cities and network issues
+## 🚀 Live Demo
 
-## Getting Started
+🔗 https://adityakumar747.github.io/Check-weather/
+
+---
+
+## ✨ Features
+
+- 🔍 Search weather by city name  
+- 🌡️ View real-time temperature  
+- 💧 Display humidity level  
+- 🌬️ Show wind speed  
+- 📱 Responsive and clean UI  
+- ⚠️ Error handling for invalid city names  
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **Vite**
+- **JavaScript (ES6+)**
+- **HTML5**
+- **CSS3**
+- **OpenWeatherMap API**
+
+---
+
+## 📦 Installation
 
 ### 1. Clone the repository
 
 ```bash
-git clone <repo-url>
-cd weather app
+git clone https://github.com/Adityakumar747/Check-weather.git
+cd Check-weather
 ```
 
 ### 2. Install dependencies
@@ -25,40 +49,57 @@ cd weather app
 npm install
 ```
 
-### 3. Set up API key
+### 3. Setup Environment Variables
 
-Create a `.env` file in the project root with your [OpenWeatherMap](https://openweathermap.org/api) API key:
+Create a `.env` file in the root directory and add your OpenWeatherMap API key:
 
 ```
-VITE_APP_ID="your_api_key_here"
+VITE_APP_ID=your_openweathermap_api_key
 ```
 
-### 4. Run the app
+You can get your API key from:  
+https://openweathermap.org/api
+
+---
+
+### 4. Run the development server
 
 ```bash
 npm run dev
 ```
 
-The app will be available at [http://localhost:5173](http://localhost:5173) (or as shown in your terminal).
+The application will run at:
 
-## Usage
+```
+http://localhost:5173
+```
 
-1. Enter a city name in the search bar and press Enter or click the search icon.
-2. The weather information for the city will be displayed.
-3. If the city is not found or there is a network error, an error message will appear.
+---
 
-## Project Structure
+## 📂 Project Structure
 
-- `src/components/Weather.jsx` — Main weather component
-- `src/components/Weather.css` — Component styles
-- `src/assets/` — Weather icons
-- `src/App.jsx` — App entry
-- `src/main.jsx` — React root
+```
+src/
+ ├── assets/            # Weather icons and images
+ ├── components/
+ │    ├── Weather.jsx   # Main weather component
+ │    └── Weather.css   # Component styles
+ ├── App.jsx            # Main application component
+ └── main.jsx           # React entry point
+```
 
-## License
+---
 
-MIT
+## 📄 License
 
-## Author 
+This project is licensed under the **MIT License**.
 
-Aditya kumar
+---
+
+## 👨‍💻 Author
+
+**Aditya Kumar**
+
+GitHub: https://github.com/Adityakumar747  
+
+If you like this project, consider giving it a ⭐ on GitHub.
