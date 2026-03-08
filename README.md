@@ -58,3 +58,7 @@ The app will be available at [http://localhost:5173](http://localhost:5173) (or 
 ## License
 
 MIT
+
+##Author 
+
+Aditya kumar
